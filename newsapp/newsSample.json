@@ -1,0 +1,32 @@
+{
+    "status": "ok",
+    "totalResults": 2,
+    "articles": [
+        {
+            "source": {
+                "id": "nhl-news",
+                "name": "NHL News"
+            },
+            "author": "Fantasy Hockey Staff",
+            "title": "NHL fantasy hockey team power rankings",
+            "description": "NHL.com has fantasy hockey team power rankings based on top 200 player totals, offseason moves and other notable trends for the 2021-22 season.",
+            "url": "https://www.nhl.com/news/nhl-power-rankings-fantasy-hockey-team-2021-22/c-299081864",
+            "urlToImage": "https://cms.nhl.bamgrid.com/images/photos/327118142/1024x576/cut.jpg",
+            "publishedAt": "2021-10-22T14:30:00Z",
+            "content": "NHL.com has fantasy hockey team power rankings based on top 200 player totals, offseason moves and other notable trends for the 2021-22 season. For more coverage, visit NHL.com/Fantasy and subscribe … [+2582 chars]"
+        },
+        {
+            "source": {
+                "id": "bleacher-report",
+                "name": "Bleacher Report"
+            },
+            "author": "Abbey Mastracco",
+            "title": "How the Seattle Kraken Are Striving to Change Hockey Culture for the Better",
+            "description": "The Seattle Kraken might be the NHL's newest team, but they've become more than a hockey club for the community.    Bold ambitions characterize an organization that stands for more than wins, losses, dollars and cents...",
+            "url": "https://bleacherreport.com/articles/2949607-how-the-seattle-kraken-are-striving-to-change-hockey-culture-for-the-better",
+            "urlToImage": "https://img.bleacherreport.net/img/images/photos/003/918/299/4d7a28808fa36e1819a6042708f236d0_crop_exact.jpg?w=1200&h=1200&q=75",
+            "publishedAt": "2021-10-22T11:00:03Z",
+            "content": "Christopher Mast/NHLI via Getty Images\r\nThe Seattle Kraken might be the NHL's newest team, but they've become more than a hockey club for the community.\r\nBold ambitions characterize an organization t… [+16481 chars]"
+        }
+    ]
+}
