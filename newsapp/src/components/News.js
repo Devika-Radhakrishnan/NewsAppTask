@@ -28,18 +28,25 @@ export class News extends Component {
         this.setState({})
         this.setState({
             page: this.state.page - 1,
+             articles: parsedData.articles 
 
         })
     }
     handleNextClick = async () => {
-        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=9429ae74542a401197284e80a483e9f9&page=${this.state.page+1}&pageSize=15`;
-        let data = await fetch(url);
-        let parsedData = await data.json()
-        console.log(parsedData);
-        this.setState({})
-        this.setState({
-            page: this.state.page + 1,
-        })
+        if(this.state.page+1>Math.ceil(this.state.totalResults/15)){
+
+        }else{
+            let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=9429ae74542a401197284e80a483e9f9&page=${this.state.page+1}&pageSize=15`;
+            let data = await fetch(url);
+            let parsedData = await data.json()
+            console.log(parsedData);
+            this.setState({})
+            this.setState({
+                page: this.state.page + 1,
+                articles: parsedData.articles 
+            })
+        }
+      
     }
     render() {
         return (
@@ -56,7 +63,7 @@ export class News extends Component {
                 </div>
                 <div className="container d-flex justify-content-between">
                     <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.handlePreviousClick}>&larr; Previous</button>
-                    <button type="button" className="btn btn-dark" onClick={this.handleNextClick}>Next &rarr;</button>
+                    <button disabled={this.state.page+1>Math.ceil(this.state.totalResults/15)} type="button" className="btn btn-dark" onClick={this.handleNextClick}>Next &rarr;</button>
                 </div>
             </div>
         )
