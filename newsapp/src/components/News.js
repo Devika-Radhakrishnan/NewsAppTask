@@ -7,7 +7,8 @@ export class News extends Component {
     static defaultProps={
         country:'in',
         pageSize:5,
-        category:'sports'
+        category:'general'
+
     }
  static propTypes={
      country:PropTypes.string,
@@ -74,7 +75,7 @@ export class News extends Component {
                     {!this.state.loading && this.state.articles.map((element) => {
                         return <div className="col-md-4" key={element.url}>
                             <NewsData title=
-                                {element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 70) : ""} imageUrl={element.urlToImage} newsUrl={element.url} />
+                                {element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 70) : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt}/>
                         </div>
                     })}
                 </div>
