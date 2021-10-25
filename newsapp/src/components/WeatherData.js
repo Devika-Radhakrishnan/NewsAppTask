@@ -1,12 +1,13 @@
 import React from 'react'
 import AnimatedWeather from 'react-animated-weather'
-
+// Weather information component
 const defaults = {
     icon: 'CLEAR_DAY',
     color: 'white',
     size: 50,
     animate: true
 };
+// switch condition to show the animated weathericon
 function WeatherData(props) {
     var weatherIcon = null;
     switch (props.weatherName) {
@@ -34,6 +35,7 @@ function WeatherData(props) {
                     size={defaults.size}
                     animate={defaults.animate}
                 />
+                    {/* Weather details  */}
                    <h4 className="text-white font-text">{props.weatherName}</h4>
                 </div>
                <div className="col-8">

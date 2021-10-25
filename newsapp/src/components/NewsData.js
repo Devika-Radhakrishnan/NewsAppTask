@@ -6,6 +6,7 @@ export class NewsData extends Component {
     render() {
       let {title,description,imageUrl,newsUrl,author,date}=this.props;
         return (
+            // News Details Section
             <div className="my-3 container">
                 <div className="row">
                 <h2>News Data </h2>
