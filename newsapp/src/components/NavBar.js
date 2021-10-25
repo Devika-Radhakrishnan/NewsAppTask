@@ -30,11 +30,9 @@ export class NavBar extends Component {
                                     </Link>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><Link className="dropdown-item" to="/ar">Arab</Link></li>
-                                        <li><Link className="dropdown-item" to="/">Another action</Link></li>
-                                        <li><Link className="dropdown-item" to="/">Action</Link></li>
-                                        <li><Link className="dropdown-item" to="/">Another action</Link></li>
-                                        <li><hr className="dropdown-divider"/></li>
-                                        <li><Link className="dropdown-item" to="/">Something else here</Link></li>
+                                        <li><Link className="dropdown-item" to="/">Us</Link></li>
+                                        <li><Link className="dropdown-item" to="/">NO</Link></li>
+                                      
                                     </ul>
                                 </li>
                                 {/* <DropDown /> */}

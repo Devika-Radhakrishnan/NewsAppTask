@@ -18,7 +18,7 @@ export default class App extends Component {
             <Route exact path="/"><News pageSize={this.pageSize} country="in" key="general" category="general" /></Route>
             <Route exact path="/business"> <News pageSize={this.pageSize} country="in" key="business" category="business" /></Route>
             <Route exact path="/entertainment"> <News pageSize={this.pageSize} country="in" key="entertainment" category="entertainment" /></Route>
-            <Route exact path="/general "><News spageSize={this.pageSize} country="in" key="general" category="general" /></Route>
+            <Route exact path="/general "><News pageSize={this.pageSize} country="in" key="general" category="general" /></Route>
             <Route exact path="/health"> <News pageSize={this.pageSize} country="in" key="health" category="health" /></Route>
             <Route exact path="/science"> <News pageSize={this.pageSize} country="in" key="science" category="science" /></Route>
             <Route exact path="/technology"> <News pageSize={this.pageSize} country="in" key="technology" category="technology" /></Route>
