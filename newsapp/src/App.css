@@ -63,8 +63,8 @@ body{
  .margin-content{
  align-items: center;
  }
- .fs-6{
-   font-size: 14px!important;
+ .fs-size{
+   font-size: 14px;
  }
  .mt-10{
    margin-top: 10px;
@@ -82,4 +82,36 @@ body{
 
 .card:hover {
   transform: translateY(-5px);
+}
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .fs-size{
+    font-size: 7px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.fs-size{
+  font-size: 7px;
+}
+
+.font-text{
+  font-size: 8px;
+}
 }

@@ -34,29 +34,29 @@ function WeatherData(props) {
                     size={defaults.size}
                     animate={defaults.animate}
                 />
-                   <h4 className="text-white">{props.weatherName}</h4>
+                   <h4 className="text-white font-text">{props.weatherName}</h4>
                 </div>
                <div className="col-8">
                <div className="container margin-content">
                 <div className="d-flex flex-wrap ">
-                <div className="text-white fs-6"><strong>Humidity-</strong></div>
-                <div className="text-white fs-6 ml-auto">{props.humidity}%</div>
+                <div className="text-white fs-size"><strong>Humidity-</strong></div>
+                <div className="text-white fs-size ml-auto">{props.humidity}%</div>
                 </div>
                 <div className="d-flex col-10 py-2">
-                        <div className="text-white fs-6" ><strong>Visiblity-</strong></div>
-                        <div className="text-white fs-6 ml-auto">{props.visiblity} mi</div>
+                        <div className="text-white fs-size" ><strong>Visiblity-</strong></div>
+                        <div className="text-white fs-size ml-auto">{props.visiblity} mi</div>
                     </div>
                     <div className="d-flex col-12 py-1">
-                        <div className="text-white fs-6"><strong>Wind Speed-</strong></div>
-                        <div className="text-white fs-6 ml-auto">{props.windSpeed} Km/h</div>
+                        <div className="text-white fs-size"><strong>Wind Speed-</strong></div>
+                        <div className="text-white fs-size ml-auto">{props.windSpeed} Km/h</div>
                     </div>
                     <div className="d-flex col-12 py-1">
-                        <div className="text-white fs-6"><strong>Feels Like-</strong></div>
-                        <div className="text-white  fs-6 ml-auto">{props.feelsLike}°C</div>
+                        <div className="text-white fs-size"><strong>Feels Like-</strong></div>
+                        <div className="text-white  fs-size ml-auto">{props.feelsLike}°C</div>
                     </div>
                     <div className="d-flex col-12 py-1">
-                        <div className="text-white fs-6"><strong>Max Temp-</strong></div>
-                        <div className="text-white fs-6 ml-auto">{props.maxTemp}°C</div>
+                        <div className="text-white fs-size"><strong>Max Temp-</strong></div>
+                        <div className="text-white fs-size ml-auto">{props.maxTemp}°C</div>
                     </div>
                     </div></div>     
                 </div>

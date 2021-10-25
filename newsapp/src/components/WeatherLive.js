@@ -56,7 +56,6 @@ export class WeatherLive extends Component {
         return (
           <React.Fragment>
             <div className="col-12 ht-container d-flex justify-content-center py-5  ">
-          
               <div className="col-6 app-bg d-flex flex-wrap py-3">
                 <div className="col-12 text-center">
                   <h2 className="text-white m-0">{(this.state.locationName)}</h2>
@@ -64,17 +63,17 @@ export class WeatherLive extends Component {
                 </div>
                 <div className="col-12 mt-auto d-flex justify-content-center">
                   <div className="my-auto">
-                  <h2 className="text-white m-0 ">
+                  <h2 className="text-white font-text m-0 ">
                   <Clock format={'HH:mm:ss'} ticking={true} />
                   </h2>
-                  <p className="text-white m-0">
+                  <p className="text-white font-text m-0">
                   <Clock
                   date={''}
                   format={'dddd, MMMM DD, YYYY'} />
                   </p>
                   </div>
-                  <div className="ml-auto">
-                  <h1 className="text-white">{(this.state.temp)}°C</h1>
+                  <div className="ml-auto ">
+                  <h1 className="text-white font-text">{(this.state.temp)}°C</h1>
                   </div>
                 </div>
               </div>
