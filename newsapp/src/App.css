@@ -39,9 +39,11 @@
 body{
   background: rgb(109,208,248);
   background: linear-gradient(90deg, rgba(109,208,248,1) 11%, rgba(180,176,248,1) 60%, rgba(118,211,235,1) 86%, rgba(126,200,215,1) 100%);
+
 }
 .ht-container{
   height: 250px;
+  border-radius: 8px;
 }
 .ht2-container{
   height: 160px;
@@ -53,7 +55,7 @@ body{
   background-repeat: no-repeat;
 }
 .side-bg {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(88, 85, 85, 0.842);
 }
 .py-5 {
   background-color: #282c34;
@@ -67,3 +69,17 @@ body{
  .mt-10{
    margin-top: 10px;
  }
+.container{
+  flex-wrap: wrap;
+}
+.card{
+  width:100%;
+  height: 650px;
+  box-shadow: -14px -3px 14px -1px rgba(72,89,137,0.42);
+  -webkit-box-shadow: -14px -3px 14px -1px rgba(72,89,137,0.42);
+  -moz-box-shadow: -14px -3px 14px -1px rgba(72,89,137,0.42);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

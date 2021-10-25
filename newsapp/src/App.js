@@ -23,6 +23,7 @@ export default class App extends Component {
             <Route exact path="/science"> <News pageSize={this.pageSize} country="in" key="science" category="science" /></Route>
             <Route exact path="/technology"> <News pageSize={this.pageSize} country="in" key="technology" category="technology" /></Route>
                     {/* <Route exact path="/sports "><NewspageSize={this.pageSize} country="in" key="sports" category="sports" /></Route> */}
+                    {/* <Route exact path="/ar"> <News pageSize={this.pageSize} language="ar" key="ar" category="arab" /></Route> */}
           </Switch>
         </Router>
       </div>
