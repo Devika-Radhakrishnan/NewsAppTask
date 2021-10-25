@@ -62,7 +62,7 @@ export class News extends Component {
         return (
             <React.Fragment>
                 <div className="container mt-5">
-                    <h4 className="text-white text-center">Live Weather!!</h4>
+                    <h4 className="text-white text-center" style={{marginTop:'90px'}}>Live Weather!!</h4>
                     {/* WeatherLive component displayed */}
                     <WeatherLive />
                 </div>
