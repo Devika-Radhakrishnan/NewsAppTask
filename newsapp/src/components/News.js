@@ -85,13 +85,17 @@ export class News extends Component {
     }
     render() {
         return (
+            <React.Fragment>
+                <div className="container mt-5">
+                <h4 className="text-white text-center">Live Weather!!</h4>
+                    <WeatherLive/>
+                </div>
             <div className="container my-3">
-                <WeatherLive/>
                 <h2 className="text-center" style={{margin:'30px 0px',color:'blue'}}>News-Top Headlines</h2>
                 {this.state.loading && <Spinner/>}
                 <div className="row">
                     {!this.state.loading && this.state.articles.map((element) => {
-                        return <div className="col-md-4" key={element.url}>
+                        return <div className="col-md-4 h-100" key={element.url}>
                             <NewsData title=
                                 {element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 70) : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt}/>
                         </div>
@@ -101,7 +105,9 @@ export class News extends Component {
                     <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.handlePreviousClick}>&larr; Previous</button>
                     <button disabled={this.state.page + 1 > Math.ceil(this.state.totalResults / this.props.pageSize)} type="button" className="btn btn-dark" onClick={this.handleNextClick}>Next &rarr;</button>
                 </div>
+           
             </div>
+            </React.Fragment>
         )
     }
 }

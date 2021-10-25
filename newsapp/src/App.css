@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,35 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body{
+  background: rgb(109,208,248);
+  background: linear-gradient(90deg, rgba(109,208,248,1) 11%, rgba(180,176,248,1) 60%, rgba(118,211,235,1) 86%, rgba(126,200,215,1) 100%);
 }
+.ht-container{
+  height: 250px;
+}
+.ht2-container{
+  height: 160px;
+}
+.app-bg{
+  background: linear-gradient(0deg, rgba(0,0,0, 0.2),rgba(0,0,0, 0.3)), url(./components/bakground_weather.jpg);
+  height: 160px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.side-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.py-5 {
+  background-color: #282c34;
+}
+ .margin-content{
+ align-items: center;
+ }
+ .fs-6{
+   font-size: 14px!important;
+ }
+ .mt-10{
+   margin-top: 10px;
+ }

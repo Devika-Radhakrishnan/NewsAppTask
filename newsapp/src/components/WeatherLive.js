@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Clock from 'react-live-clock';
+import WeatherData from './WeatherData'
 export class WeatherLive extends Component {
     state = {
         latitude: null,
@@ -20,7 +21,7 @@ export class WeatherLive extends Component {
             this.getPositions()
                 .then((position) => {
 
-                    this.getWeather(position.coords.latitude, position.coords.latitude);
+                    this.getWeather(position.coords.latitude, position.coords.longitude);
                     // console.log(position.coords.latitude);
                     // latitude:9.9130729,longitude:10.062265
                 })
@@ -52,36 +53,36 @@ export class WeatherLive extends Component {
      })
     }
     render() {
-        return 
-        (
-        <React.Fragment>
-             <div className="col-8 d-flex justify-content-center py-5  ">
-             <div className="col-6 app-bg d-flex flex-wrap py-3">
-             <div className="col-12">
-              <h2 className="text-white m-0">{(this.state.locationName)}</h2>
-              <p className="text-white">{(this.state.country)}</p>
-            </div>
-            <div className="col-12 mt-auto d-flex">
-              <div className="my-auto">
-              <h2 className="text-white m-0 ">
-              <Clock format={'HH:mm:ss'} ticking={true} />
-              </h2>
-              <p className="text-white m-0">
-              <Clock
-              date={''}
-              format={'dddd, MMMM DD, YYYY'} />
-              </p>
+        return (
+          <React.Fragment>
+            <div className="col-12 ht-container d-flex justify-content-center py-5  ">
+          
+              <div className="col-6 app-bg d-flex flex-wrap py-3">
+                <div className="col-12 text-center">
+                  <h2 className="text-white m-0">{(this.state.locationName)}</h2>
+                  <p className="text-white">{(this.state.country)}</p>
+                </div>
+                <div className="col-12 mt-auto d-flex justify-content-center">
+                  <div className="my-auto">
+                  <h2 className="text-white m-0 ">
+                  <Clock format={'HH:mm:ss'} ticking={true} />
+                  </h2>
+                  <p className="text-white m-0">
+                  <Clock
+                  date={''}
+                  format={'dddd, MMMM DD, YYYY'} />
+                  </p>
+                  </div>
+                  <div className="ml-auto">
+                  <h1 className="text-white">{(this.state.temp)}°C</h1>
+                  </div>
+                </div>
               </div>
-              <div className="ml-auto">
-              <h1 className="text-white">{(this.state.temp)}°C</h1>
-              </div>
+              <WeatherData humidity={this.state.humidity} visiblity={this.state.visiblity} windSpeed={this.state.windSpeed} feelsLike={this.state.feelsLike} maxTemp={this.state.maxTemp} weatherName={this.state.weatherName} /> 
             </div>
-             </div>
-             <WeatherInfo humidity={this.state.humidity} visiblity={this.state.visiblity} windSpeed={this.state.windSpeed} feelsLike={this.state.feelsLike} maxTemp={this.state.maxTemp} weatherName={this.state.weatherName} />
-             </div>
-        </React.Fragment>
-        )
+          </React.Fragment>
+        );
+      }
     }
-}
 
 export default WeatherLive
